@@ -46,6 +46,7 @@ if(grouping==='user' || grouping==='priority'){
     case 'Todo': imageSrc = toDo; break;
     case 'In progress': imageSrc = In_Progress; break;
     case 'Backlog': imageSrc =Backlog ; break;
+    default:imageSrc=toDo;break;
  }
  return (
     <span className='ticket-title'>
