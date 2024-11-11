@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.kanban-board {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color:white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.kanban-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-title-container {
+  display: flex;
+  align-items: center; 
+}
+
+.user-name {
+  margin-left: 8px; 
+}
+
+
+.ticket {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.ticket-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 6px;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin:5px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-id {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.ticket-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px;
+  margin-bottom: 5px;
+  color: #343a40;
+}
+
+.ticket-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color:white;
+  border-radius: 6px;
+  color:rgb(103, 102, 102);
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #dee2e6;
+}
+
+.exclamation-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  fill:rgb(90, 88, 88);
+}
+.tag-container{
+  margin: 8px;
+}

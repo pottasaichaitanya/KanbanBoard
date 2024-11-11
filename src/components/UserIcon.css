@@ -1,0 +1,31 @@
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;             
+    font-weight: bold;
+    font-size: 16px;
+    cursor: default;
+    position: relative;      
+}
+
+.status-indicator {
+    width: 10px;              
+    height: 10px;
+    border-radius: 50%;       
+    position: absolute;
+    bottom: -2px;            
+    right: -2px;              
+    border: 2px solid white;  
+}
+
+.status-indicator.available {
+    background-color: #4CAF50; 
+}
+
+.status-indicator.unavailable {
+    background-color: #BDBDBD; 
+}
