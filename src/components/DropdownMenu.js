@@ -11,19 +11,19 @@ function DropdownMenu({ grouping, setGrouping, sorting, setSorting }) {
 
     const handleGroupingChange = (e) => {
         setGrouping(e.target.value);
-        setIsOpen(false); // Close dropdown after selection
+        setIsOpen(false); 
     };
 
     const handleSortingChange = (e) => {
         setSorting(e.target.value);
-        setIsOpen(false); // Close dropdown after selection
+        setIsOpen(false); 
     };
 
     return (
         <div className="dropdown">
             
             <button className="dropdown-button" onClick={toggleDropdown}>
-            <span><img src={img}/></span>
+            <span><img src={img} alt=""/></span>
                 Display ▼
             </button>
             {isOpen && (
