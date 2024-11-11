@@ -68,7 +68,14 @@ function sortGroupedTickets(groupedTickets, sorting) {
 }
 
 function getGroupTitle(group, grouping, users,tickets) {
-    const ticketCount = tickets.filter(ticket => ticket.userId === group).length;
+        let ticketCount = 0;
+        if (grouping === 'user') {
+        ticketCount = tickets.filter(ticket => ticket.userId === group).length;
+    } else if (grouping === 'status') {
+        ticketCount = tickets.filter(ticket => ticket.status === group).length;
+    } else if (grouping === 'priority') {
+        ticketCount = tickets.filter(ticket => ticket.priority === group).length;
+    }
     if (grouping === 'user') {
         const user = users.find(user => user.id === group);
         if (user) {
@@ -105,6 +112,7 @@ function getGroupTitle(group, grouping, users,tickets) {
     if (grouping === 'priority') {
         let imageSrc;
         switch (group) {
+            
             case '1': imageSrc = Img1; break;
             case '2': imageSrc = Img2; break;
             case '3': imageSrc = Img3; break;
