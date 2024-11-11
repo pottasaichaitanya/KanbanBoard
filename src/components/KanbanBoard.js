@@ -74,8 +74,9 @@ function getGroupTitle(group, grouping, users,tickets) {
     } else if (grouping === 'status') {
         ticketCount = tickets.filter(ticket => ticket.status === group).length;
     } else if (grouping === 'priority') {
-        ticketCount = tickets.filter(ticket => ticket.priority === group).length;
-    }
+             ticketCount = tickets.filter(ticket => String(ticket.priority) === String(group)).length;
+
+        }
     if (grouping === 'user') {
         const user = users.find(user => user.id === group);
         if (user) {
